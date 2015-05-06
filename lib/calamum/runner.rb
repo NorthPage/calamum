@@ -79,6 +79,8 @@ class Calamum::Runner
       process_section("authentication", @definition.get_authentication)
       process_errors
     end
+
+    process_static
   rescue => ex
     puts_error ex.message
   end
@@ -150,4 +152,15 @@ class Calamum::Runner
     end
   end
 
+  # Copy static content, if defined
+  def process_static
+    static = @definition.get_static
+    if static
+      src_path = File.expand_path(File.dirname(Calamum::Config[:source]))
+      src = File.join(src_path, static, '.')
+      dst = Calamum::Config[:doc_path]
+      puts_info "#{src} --> #{dst}"
+      FileUtils.cp_r src, dst
+    end
+  end
 end
