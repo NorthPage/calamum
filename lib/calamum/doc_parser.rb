@@ -65,4 +65,7 @@ class Calamum::DocParser
     resource['uri'] && resource['action'] && resource['description'] && %{GET POST PUT DELETE}.include?(resource['action'].upcase)
   end
 
+  def get_static
+    @definition['static']
+  end
 end
