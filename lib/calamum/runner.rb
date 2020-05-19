@@ -130,6 +130,7 @@ class Calamum::Runner
       :name => @definition.get_name,
       :version => @definition.get_version,
       :errors => @definition.get_errors,
+      :copyright => @definition.get_copyright
     }
     page = Calamum::DocGenerator.new(:errors)
     page.save_template("errors.html", bindings)
@@ -139,7 +140,8 @@ class Calamum::Runner
   def process_pages
     bindings = {
       :name => @definition.get_name,
-      :version => @definition.get_version
+      :version => @definition.get_version,
+      :copyright => @definition.get_copyright
     }
 
     page = Calamum::DocGenerator.new(:view)

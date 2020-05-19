@@ -1,5 +1,6 @@
-Next Release
+1.2.3(19/05/2021)
 -----------------
+* Adds copyright to error and view templates
 
 1.2.2(27/11/2014)
 -----------------
@@ -14,7 +15,7 @@ Next Release
 * [#10](https://github.com/malachheb/calamum/pull/10) Add charset declaration for UTF-8 - [@ingk](https://github.com/ingk).
 * Fix: depend on pry but is not listed as a dependency - [@malachheb](https://github.com/malachheb).
 
-1.1.0 
+1.1.0
 -----------------
 
 * [#8](https://github.com/malachheb/calamum/pull/8) Remove unecessary dep on pry, gemfile support, human readable path generation - [@elthariel ](https://github.com/elthariel).

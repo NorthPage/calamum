@@ -1,3 +1,3 @@
 module Calamum
-  VERSION = '1.2.2-np'
+  VERSION = '1.2.3'
 end
