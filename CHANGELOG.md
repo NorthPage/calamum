@@ -1,4 +1,4 @@
-1.2.3(19/05/2021)
+1.2.3(19/05/2020)
 -----------------
 * Adds copyright to error and view templates
 
